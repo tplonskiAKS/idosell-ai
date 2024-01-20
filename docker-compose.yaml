@@ -1,0 +1,59 @@
+version: '3.5'
+
+services:
+  db:
+    image: postgres
+    restart: always
+    environment:
+      - POSTGRES_PASSWORD=postgres
+    container_name: postgres
+    volumes:
+      - /home/kacperwozniak1996/pg_data_idosell:/var/lib/postgresql/data
+    user: 1000:1000
+    ports:
+      - '5432:5432'
+
+  server:
+    image: kacper96w/server:v1.0.3
+    restart: always
+    container_name: nest-server
+    environment:
+      - PORT=3000
+    ports:
+      - '3000:3000'
+    depends_on:
+      - db
+    volumes:
+      - /home/kacperwozniak1996/src:/app/src
+
+  pgadmin:
+    image: dpage/pgadmin4
+    restart: always
+    container_name: nest-pgadmin4
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=admin@admin.com
+      - PGADMIN_DEFAULT_PASSWORD=pgadmin4
+    ports:
+      - '5050:80'
+    depends_on:
+      - db
+
+  jenkins:
+    image: jenkins/jenkins
+    restart: always
+    container_name: jenkins
+    ports:
+      - '8080:8080'
+    volumes:
+      - /home/kacperwozniak1996/jenkins_data:/var/jenkins_home
+
+  client:
+    image: kacper96w/client:v1.0.1
+    restart: always
+    container_name: next-client
+    ports:
+      - '8000:8000'
+    depends_on:
+      - server
+
+

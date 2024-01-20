@@ -1,0 +1,28 @@
+{
+  "name": "example-nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/luxon": "^3.3.1",
+    "@types/yargs": "^17.0.24",
+    "axios": "^1.4.0",
+    "dotenv": "^16.3.1",
+    "exponential-backoff": "^3.1.1",
+    "luxon": "^3.4.0",
+    "openai": "^3.3.0",
+    "pg": "^8.11.2",
+    "pg-query-stream": "^4.5.2",
+    "typeorm": "^0.3.17",
+    "yargs": "^17.1.1-candidate.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.4.8"
+  }
+}

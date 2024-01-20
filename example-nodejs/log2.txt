@@ -1,0 +1,34 @@
+[LOG] Refreshing token.
+[
+  {
+    productIdent: { productIdentType: 'id', identValue: '226974' },
+    productDescriptionsLangData: [ [Object], [Object] ]
+  }
+]
+[
+  {
+    langId: 'pol',
+    productName: 'Test Kacper Wozniak',
+    productAuctionName: '',
+    productPriceComparerName: '',
+    productDescription: 'To jest opis krotki produktu',
+    productLongDescription: 'To jest opis dlugi produktu',
+    productAuctionLongDescription: '',
+    productMetaTitle: '',
+    productMetaDescription: '',
+    productMetaKeywords: ''
+  },
+  {
+    langId: 'eng',
+    productName: 'Domyślna nazwa',
+    productAuctionName: '',
+    productPriceComparerName: '',
+    productDescription: 'Domyślny opis krótki',
+    productLongDescription: '',
+    productAuctionLongDescription: '',
+    productMetaTitle: '',
+    productMetaDescription: '',
+    productMetaKeywords: ''
+  }
+]
+undefined
