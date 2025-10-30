@@ -19,7 +19,7 @@
     "openai": "^3.3.0",
     "pg": "^8.11.2",
     "pg-query-stream": "^4.5.2",
-    "typeorm": "^0.3.17",
+    "typeorm": "^0.3.26",
     "yargs": "^17.1.1-candidate.0"
   },
   "devDependencies": {
